@@ -1,4 +1,4 @@
-package dao;
+package DAO;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -34,6 +34,7 @@ public class TextDAO {
 					this.lang = Language.ENGLISH;
 				else if (list.get(i).getValue("language").equals("ro"))
 					this.lang = Language.ROMANIAN;
+				
 				else if (list.get(i).getValue("language").equals("es"))
 					this.lang = Language.SPANISH;
 

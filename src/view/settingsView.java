@@ -12,36 +12,29 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import java.awt.Font;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JRadioButton;
 import javax.swing.JToggleButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.DefaultComboBoxModel;
 import DAO.Language;
-import controller.Controller;
-
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
-public class SettingsInterface {
+public class settingsView {
 
 	private JFrame frame;
-	static JSlider slider;
-	private Controller controller;
 
 	/**
 	 * Launch the application.
 	 */
-	/*
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					SettingsInterface window = new SettingsInterface(null);
-					
-
+					settingsView window = new settingsView();
+					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -52,12 +45,8 @@ public class SettingsInterface {
 	/**
 	 * Create the application.
 	 */
-	public SettingsInterface(Controller ctrl) {
-		this.controller=ctrl;
-
+	public settingsView() {
 		initialize();
-		frame.setVisible(true);
-
 	}
 
 	/**
@@ -93,7 +82,7 @@ public class SettingsInterface {
 		lblVolume.setBounds(12, 13, 90, 38);
 		panel_2.add(lblVolume);
 		
-		 slider = new JSlider(JSlider.HORIZONTAL,0,100,100);
+		JSlider slider = new JSlider();
 		slider.setBounds(0, 59, 653, 26);
 		panel_2.add(slider);
 		
@@ -122,14 +111,10 @@ public class SettingsInterface {
 		comboBox.setModel(new DefaultComboBoxModel(Language.values()));
 		comboBox.setBounds(168, 48, 111, 56);
 		panel_1.add(comboBox);
-		JButton btnNewButton = new JButton("Save Settings");
-		btnNewButton.setBounds(500, 48, 141, 57);
 		
+		JButton btnNewButton = new JButton("Save Settings");
+	
+		btnNewButton.setBounds(500, 48, 141, 57);
 		panel_1.add(btnNewButton);
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			
-			}
-		});
 	}
 }

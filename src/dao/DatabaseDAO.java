@@ -1,4 +1,4 @@
-package dao;
+package DAO;
 import java.sql.*; // Use classes in java.sql package
 
 public class DatabaseDAO {

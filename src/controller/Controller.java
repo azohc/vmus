@@ -1,11 +1,12 @@
 package controller;
 
+import model.AppService;
 import view.MainInterface;
 
 public class Controller {
 	private static Controller instance;
 	private MainInterface _mainInterface;
-	
+	private AppService appService;
 	private Controller () {
 		
 	}
@@ -15,5 +16,6 @@ public class Controller {
 			instance = new Controller();
 		return instance;
 	}
+	
 
 }

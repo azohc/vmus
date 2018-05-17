@@ -1,5 +1,7 @@
 package model;
 
+import DAO.Language;
+
 public class AppService {
 
 	private Account _account;
@@ -15,5 +17,9 @@ public class AppService {
 	private TRequest _tRequest;
 	private TFriends _tFriends;
 	
+	public void applySettings(int vol,Language lang,boolean notif)
+	{ _settings=new Settings();
 	
+		
+	}
 }
