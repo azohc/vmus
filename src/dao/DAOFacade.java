@@ -1,8 +1,10 @@
-package DAO;
+package dao;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLException;
+
+import enums.Language;
 
 public class DAOFacade {
 	private static DatabaseDAO database = null;

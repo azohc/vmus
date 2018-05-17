@@ -1,4 +1,4 @@
-package DAO;
+package dao;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+import enums.Language;
 
 public class TextDAO {
 	private Language lang=Language.ENGLISH;

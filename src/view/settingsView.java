@@ -14,10 +14,13 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JRadioButton;
 import javax.swing.JToggleButton;
+
+import enums.Language;
+
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.DefaultComboBoxModel;
-import DAO.Language;
+
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;

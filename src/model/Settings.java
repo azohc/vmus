@@ -3,7 +3,7 @@ package model;
 
 import java.io.IOException;
 
-import DAO.DAOFacade;
+import dao.DAOFacade;
 
 public class Settings {
 

@@ -1,6 +1,6 @@
 package model;
 
-import DAO.Language;
+import enums.Language;
 
 public class TSettings {
 	private Language lang = Language.ENGLISH;

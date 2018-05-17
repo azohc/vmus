@@ -1,4 +1,4 @@
-package DAO;
+package dao;
 
 public class IniError extends RuntimeException {
 

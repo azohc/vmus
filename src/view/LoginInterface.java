@@ -17,8 +17,9 @@ import javax.swing.JToggleButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.DefaultComboBoxModel;
-import DAO.Language;
+
 import controller.Controller;
+import enums.Language;
 
 import java.awt.Color;
 import java.awt.event.ActionListener;

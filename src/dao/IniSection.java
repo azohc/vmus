@@ -1,4 +1,4 @@
-package DAO;
+package dao;
 
 import java.io.IOException;
 import java.io.OutputStream;
