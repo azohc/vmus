@@ -50,17 +50,17 @@ public static boolean getNotif()
 {
 	return textFile.getNotif();
 }
-	public static void main(String[] args) throws SQLException, IOException {
-		//System.out.println(DAOFacade.checkUsernameExists("zz"));
-		System.out.println(DAOFacade.getVolume());
-		System.out.println(DAOFacade.getNotif());
-		System.out.println(DAOFacade.getLang());
-		DAOFacade.loadSettings();
-		System.out.println(DAOFacade.getVolume());
-		System.out.println(DAOFacade.getNotif());
-		System.out.println(DAOFacade.getLang());
-
-	
-	}
+//	public static void main(String[] args) throws SQLException, IOException {
+//		//System.out.println(DAOFacade.checkUsernameExists("zz"));
+//		System.out.println(DAOFacade.getVolume());
+//		System.out.println(DAOFacade.getNotif());
+//		System.out.println(DAOFacade.getLang());
+//		DAOFacade.loadSettings();
+//		System.out.println(DAOFacade.getVolume());
+//		System.out.println(DAOFacade.getNotif());
+//		System.out.println(DAOFacade.getLang());
+//
+//	
+//	}
 
 }

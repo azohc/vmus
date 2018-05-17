@@ -55,13 +55,13 @@ public boolean getNotif()
 {
 	return this.notification;
 }
-	public static void main(String[] args) throws SQLException, IOException {
-		TextDAO t = new TextDAO("set.ini");
-		t.loadFile();
-		System.out.println(t.getNotif());
-		System.out.println(t.getVolume());
-		System.out.println(t.getLang());
-
-
-	}
+//	public static void main(String[] args) throws SQLException, IOException {
+//		TextDAO t = new TextDAO("set.ini");
+//		t.loadFile();
+//		System.out.println(t.getNotif());
+//		System.out.println(t.getVolume());
+//		System.out.println(t.getLang());
+//
+//
+//	}
 }

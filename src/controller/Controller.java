@@ -4,9 +4,12 @@ import model.AppService;
 import view.MainInterface;
 
 public class Controller {
+	
 	private static Controller instance;
+	
 	private MainInterface _mainInterface;
 	private AppService appService;
+	
 	private Controller () {
 		
 	}
@@ -17,10 +20,11 @@ public class Controller {
 		return instance;
 	}
 	
-	public  void registerNewUser(String username, String email, String password)
+	public  void registerNewUser(String username, String password)
 	{
 		
 	}
 	
+
 
 }

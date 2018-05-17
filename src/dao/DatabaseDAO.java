@@ -97,10 +97,10 @@ public class DatabaseDAO {
 
 	}
 
-	public static void main(String[] args) throws SQLException {
-		DatabaseDAO db = DatabaseDAO.getInstance();
-		System.out.println(db.checkUser("tester2", "12345"));
-		db.addNewUser("tester","test@ucm.es", "12345");
-
-	}
+//	public static void main(String[] args) throws SQLException {
+//		DatabaseDAO db = DatabaseDAO.getInstance();
+//		System.out.println(db.checkUser("tester2", "12345"));
+//		db.addNewUser("tester","test@ucm.es", "12345");
+//
+//	}
 }
