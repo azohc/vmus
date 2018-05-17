@@ -17,5 +17,10 @@ public class Controller {
 		return instance;
 	}
 	
+	public  void registerNewUser(String username, String email, String password)
+	{
+		
+	}
+	
 
 }

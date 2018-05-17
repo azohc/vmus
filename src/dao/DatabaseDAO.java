@@ -74,15 +74,17 @@ public class DatabaseDAO {
 	}
 	return false;
 	}
-	public void addNewUser(String username, String password) throws SQLException {
+	public void addNewUser(String username, String email, String password) throws SQLException {
 
 		// Step 3: Execute a SQL SELECT query, the query result
 		// is returned in a 'ResultSet' object.
-		String strSelect = "Insert INTO users ( username,password) values (?,?)";
+		String strSelect = "Insert INTO users ( email,username,password) values (?,?,?)";
 		try {
 			PreparedStatement preparedStatement = conn.prepareStatement(strSelect);
-			preparedStatement.setString(1, username);
-			preparedStatement.setString(2, password);
+			preparedStatement.setString(1, email);
+			preparedStatement.setString(2, username);
+			preparedStatement.setString(3, password);
+
 
 			System.out.println("The SQL query is: " + strSelect); // Echo For debugging
 			System.out.println();
@@ -98,7 +100,7 @@ public class DatabaseDAO {
 	public static void main(String[] args) throws SQLException {
 		DatabaseDAO db = DatabaseDAO.getInstance();
 		System.out.println(db.checkUser("tester2", "12345"));
-		db.addNewUser("tester2", "12345");
+		db.addNewUser("tester","test@ucm.es", "12345");
 
 	}
 }

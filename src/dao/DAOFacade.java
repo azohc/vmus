@@ -28,9 +28,9 @@ return database.checkUser(username, password);
 return database.checkUsernameExists(username);
 	}
 
-	public static void addNewUser(String username, String password) throws SQLException {
+	public static void addNewUser(String username, String password,String email) throws SQLException {
 
-		database.addNewUser(username, password);
+		database.addNewUser(username, password,email);
 	}
 	public static void loadSettings() throws IOException
 	{

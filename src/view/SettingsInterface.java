@@ -28,30 +28,12 @@ import java.awt.Color;
 public class SettingsInterface {
 
 	private JFrame frame;
-	static JSlider slider;
+	private JSlider slider;//FOR VOLUME
+	private JRadioButton rdbtnNewRadioButton;//FOR NOTIFICATION
+	private JComboBox comboBox;//FOR LANGUAGE
 	private Controller controller;
 
-	/**
-	 * Launch the application.
-	 */
-	/*
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					SettingsInterface window = new SettingsInterface(null);
-					
 
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the application.
-	 */
 	public SettingsInterface(Controller ctrl) {
 		this.controller=ctrl;
 
@@ -60,14 +42,12 @@ public class SettingsInterface {
 
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(Color.BLACK);
 		frame.setBounds(100, 100, 671, 450);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
 		frame.setPreferredSize(new Dimension(1000, 1000));
 		
@@ -108,7 +88,7 @@ public class SettingsInterface {
 		lblNotification.setFont(new Font("Tahoma", Font.BOLD, 16));
 		panel_1.add(lblNotification);
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("Enabled");
+		 rdbtnNewRadioButton = new JRadioButton("Enabled");
 		rdbtnNewRadioButton.setSelected(true);
 		rdbtnNewRadioButton.setBounds(136, 5, 127, 25);
 		panel_1.add(rdbtnNewRadioButton);
@@ -118,7 +98,7 @@ public class SettingsInterface {
 		lblLanguage.setBounds(12, 53, 161, 45);
 		panel_1.add(lblLanguage);
 		
-		JComboBox comboBox = new JComboBox();
+		 comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(Language.values()));
 		comboBox.setBounds(168, 48, 111, 56);
 		panel_1.add(comboBox);

@@ -22,4 +22,9 @@ public class AppService {
 	
 		
 	}
+	
+	public  void registerNewUser(String username, String email, String password)
+	{
+		
+	}
 }
