@@ -12,7 +12,6 @@ import controller.Controller;
 
 @SuppressWarnings("serial")
 public class MainInterface extends JFrame{
-	private Controller ctrl;
 	public FriendInterface _friend;
 	public SettingsInterface _settings;
 	public RequestInterface _request;
@@ -22,8 +21,7 @@ public class MainInterface extends JFrame{
 	public JPanel cardPanel;
 	public CardLayout clayout;
 	
-	public MainInterface(Controller c){
-		this.ctrl=c;
+	public MainInterface( ){
 		
 		initGUI();
 		
@@ -36,7 +34,7 @@ public class MainInterface extends JFrame{
 		setContentPane(cardPanel);
 
 	
-		_account = new AccountInterface(ctrl);
+		_account = new AccountInterface();
 		_settings = new SettingsInterface();
 		_game = new GameInterface();
 		

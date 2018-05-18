@@ -23,7 +23,6 @@ import controller.Controller;
 @SuppressWarnings("serial")
 public class AccountInterface extends JPanel {
 
-	private Controller ctrl;
 	private JPasswordField loginPass;//this is the password field
 	private JTextArea loginName ;//this is the username field
 	private JPasswordField regPass;//password
@@ -33,8 +32,7 @@ public class AccountInterface extends JPanel {
 	
 	private CardLayout cl;
 	
-	public AccountInterface(Controller c) {
-		this.ctrl=c;
+	public AccountInterface( ) {
 		cl = new CardLayout();
 		setLayout(cl);
 		add(loginInterface(), "login");
@@ -101,8 +99,8 @@ public class AccountInterface extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
            try {
-        	   if(ctrl.loginUser(loginName.getText(), loginPass.getText()))
-ctrl.changeToGamePanel();
+        	   if(Controller.loginUser(loginName.getText(), loginPass.getText()))
+Controller.changeToGamePanel();
         	   else
         		   System.out.println("nu");
 
@@ -200,7 +198,7 @@ ctrl.changeToGamePanel();
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	             try {
-					ctrl.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
+					Controller.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
