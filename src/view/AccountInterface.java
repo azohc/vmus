@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -17,10 +18,12 @@ import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
+import controller.Controller;
+
 @SuppressWarnings("serial")
 public class AccountInterface extends JPanel {
 
-	
+	private Controller ctrl;
 	private JPasswordField loginPass;//this is the password field
 	private JTextArea loginName ;//this is the username field
 	private JPasswordField regPass;//password
@@ -30,7 +33,8 @@ public class AccountInterface extends JPanel {
 	
 	private CardLayout cl;
 	
-	public AccountInterface() {
+	public AccountInterface(Controller c) {
+		this.ctrl=c;
 		cl = new CardLayout();
 		setLayout(cl);
 		add(loginInterface(), "login");
@@ -93,6 +97,21 @@ public class AccountInterface extends JPanel {
 		JButton btnNewButton = new JButton("Login");
 		btnNewButton.setBounds(402, 66, 141, 57);
 		panel_2.add(btnNewButton);
+		btnNewButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+           try {
+        	   if(ctrl.loginUser(loginName.getText(), loginPass.getText()))
+ctrl.changeToGamePanel();
+        	   else
+        		   System.out.println("nu");
+
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+            }
+        });
 	
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
@@ -177,7 +196,17 @@ public class AccountInterface extends JPanel {
 		JButton btnRegister = new JButton("Register");
 		btnRegister.setBounds(474, 28, 141, 57);
 		panel_1.add(btnRegister);
-		
+		btnRegister.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	             try {
+					ctrl.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+	            }
+	        });
 		JLabel lblPassword_1 = new JLabel("Password");
 		lblPassword_1.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblPassword_1.setBounds(12, 13, 90, 38);

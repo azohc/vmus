@@ -8,9 +8,11 @@ import java.awt.Toolkit;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import controller.Controller;
+
 @SuppressWarnings("serial")
 public class MainInterface extends JFrame{
-
+	private Controller ctrl;
 	public FriendInterface _friend;
 	public SettingsInterface _settings;
 	public RequestInterface _request;
@@ -20,7 +22,8 @@ public class MainInterface extends JFrame{
 	public JPanel cardPanel;
 	public CardLayout clayout;
 	
-	public MainInterface(){
+	public MainInterface(Controller c){
+		this.ctrl=c;
 		
 		initGUI();
 		
@@ -33,7 +36,7 @@ public class MainInterface extends JFrame{
 		setContentPane(cardPanel);
 
 	
-		_account = new AccountInterface();
+		_account = new AccountInterface(ctrl);
 		_settings = new SettingsInterface();
 		_game = new GameInterface();
 		

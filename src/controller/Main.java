@@ -11,7 +11,7 @@ public class Main {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new MainInterface();
+				Controller ctrl=Controller.getInstance();
 			}
 		});
 	}

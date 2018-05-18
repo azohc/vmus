@@ -1,5 +1,7 @@
 package model;
 
+import java.sql.SQLException;
+
 import enums.Language;
 
 public class AppService {
@@ -23,8 +25,14 @@ public class AppService {
 		
 	}
 	
-	public  void registerNewUser(String username, String email, String password)
+	public  void registerNewUser(String username, String email, String password) throws SQLException
 	{
-		
+		_tAccount=new TAccount(username,email,password);
+	}
+	
+	public boolean loginUser(String username,String password) throws SQLException
+	{
+		_account=new Account(username);
+		return _account.checkUser(username, password);
 	}
 }
