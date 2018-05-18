@@ -6,9 +6,9 @@ import model.TAccount;
 public class DatabaseDAO {
 	private static DatabaseDAO instancia;
 	private static Connection conn;
-	final private static String url = "jdbc:mysql://localhost:3306/virtualmuss";
-	final private static String user = "root";
-	final private static String pass = "";
+	final private static String url = "jdbc:mysql://fenrir.info.uaic.ro:3306/UCMINFO";
+	final private static String user = "UCMINFO";
+	final private static String pass = "KsPEUUoazj";
 
 	private DatabaseDAO() {
 		try {
@@ -83,8 +83,8 @@ public class DatabaseDAO {
 		String strSelect = "Insert INTO users ( email,username,password) values (?,?,?)";
 		try {
 			PreparedStatement preparedStatement = conn.prepareStatement(strSelect);
-			preparedStatement.setString(1, _user.getEmail());
-			preparedStatement.setString(2, _user.getUsername());
+			preparedStatement.setString(1, _user.getUsername());
+			preparedStatement.setString(2, _user.getEmail());
 			preparedStatement.setString(3, _user.getPassword());
 
 
