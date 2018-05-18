@@ -41,7 +41,7 @@ public class MainInterface extends JFrame{
 		cardPanel.add(_settings, "settings");
 		cardPanel.add(_game, "game");
 		
-		clayout.show(cardPanel, "game");
+		clayout.show(cardPanel, "account");
 		
 				
 		
