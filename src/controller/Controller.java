@@ -11,12 +11,13 @@ public class Controller {
 	
 	private static Controller instance;
 	
-	private static MainInterface _mainInterface;
-	private static AppService appService;
+	private MainInterface _mainInterface;
+	private AppService appService;
 	
-	private Controller () {
+	private Controller () 
+	{
 		appService=new AppService();
-		_mainInterface=new MainInterface();
+		_mainInterface=new MainInterface(this);
 	}
 	
 	public static Controller getInstance() {
@@ -25,16 +26,17 @@ public class Controller {
 		return instance;
 	}
 	
-	public   static void registerNewUser(String username, String email,String password) throws SQLException
-	{appService.registerNewUser(username, email, password);
+	public  void registerNewUser(String username, String email,String password) throws SQLException
+	{
+		appService.registerNewUser(username, email, password);
 		
 	}
-	public static boolean loginUser(String username,String password) throws SQLException
+	public boolean loginUser(String username,String password) throws SQLException
 	{
 		return appService.loginUser(username, password);
 	}
 	
-	public static void changeToGamePanel()
+	public void changeToGamePanel()
 	{
 		_mainInterface.clayout.show(_mainInterface.cardPanel, "game");
 	}

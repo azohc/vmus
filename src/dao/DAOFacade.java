@@ -5,11 +5,14 @@ import java.io.IOException;
 import java.sql.SQLException;
 
 import enums.Language;
+import model.TAccount;
 
 public class DAOFacade {
 	private static DatabaseDAO database = null;
 	private static TextDAO textFile;
-	static {
+		
+	public DAOFacade()
+	{
 		database = DatabaseDAO.getInstance();
 		try {
 			textFile=new TextDAO("set.ini");
@@ -19,37 +22,33 @@ public class DAOFacade {
 		}
 	}
 
-	// private static TextDAO text=null;
-	public DAOFacade() {
+	public boolean checkUser(String username, String password) throws SQLException {
+		return database.checkUser(username, password);
+	}
+	public boolean checkUsernameExists(String username) throws SQLException {
+		return database.checkUsernameExists(username);
 	}
 
-	public static boolean checkUser(String username, String password) throws SQLException {
-return database.checkUser(username, password);
+	public void addNewUser(TAccount _user) throws SQLException
+	{
+		database.addNewUser(_user);
 	}
-	public static boolean checkUsernameExists(String username) throws SQLException {
-return database.checkUsernameExists(username);
-	}
-
-	public static void addNewUser(String username, String email,String password) throws SQLException {
-
-		database.addNewUser(username, email,password);
-	}
-	public static void loadSettings() throws IOException
+	public void loadSettings() throws IOException
 	{
 		textFile.loadFile();
 	}
-public static int getVolume()
-{
-	return textFile.getVolume();
-}
-public static Language getLang()
-{
-	return textFile.getLang();
-}
-public static boolean getNotif()
-{
-	return textFile.getNotif();
-}
+	public int getVolume()
+	{
+		return textFile.getVolume();
+	}
+	public Language getLang()
+	{
+		return textFile.getLang();
+	}
+	public boolean getNotif()
+	{
+		return textFile.getNotif();
+	}
 //	public static void main(String[] args) throws SQLException, IOException {
 //		//System.out.println(DAOFacade.checkUsernameExists("zz"));
 //		System.out.println(DAOFacade.getVolume());

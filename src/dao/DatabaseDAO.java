@@ -1,6 +1,8 @@
 package dao;
 import java.sql.*; // Use classes in java.sql package
 
+import model.TAccount;
+
 public class DatabaseDAO {
 	private static DatabaseDAO instancia;
 	private static Connection conn;
@@ -74,16 +76,16 @@ public class DatabaseDAO {
 	}
 	return false;
 	}
-	public void addNewUser(String username, String email, String password) throws SQLException {
+	public void addNewUser(TAccount _user) throws SQLException {
 
 		// Step 3: Execute a SQL SELECT query, the query result
 		// is returned in a 'ResultSet' object.
 		String strSelect = "Insert INTO users ( email,username,password) values (?,?,?)";
 		try {
 			PreparedStatement preparedStatement = conn.prepareStatement(strSelect);
-			preparedStatement.setString(1, email);
-			preparedStatement.setString(2, username);
-			preparedStatement.setString(3, password);
+			preparedStatement.setString(1, _user.getEmail());
+			preparedStatement.setString(2, _user.getUsername());
+			preparedStatement.setString(3, _user.getPassword());
 
 
 			System.out.println("The SQL query is: " + strSelect); // Echo For debugging

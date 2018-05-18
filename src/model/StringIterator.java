@@ -1,23 +1,32 @@
 package model;
 
-public class StringIterator implements ListIterator<String> {
+import java.util.Iterator;
 
+public class StringIterator implements ListIterator<String>
+{
+	
+	Iterator<String> _itr;
+	
+	public StringIterator(Iterator<String> iterator)
+	{
+		_itr = iterator;
+	}
+	
 	@Override
 	public String next() {
-		// TODO Auto-generated method stub
-		return null;
+		return _itr.next();
 	}
 
 	@Override
 	public void remove() {
-		// TODO Auto-generated method stub
-		
+		_itr.remove();
 	}
 
 	@Override
 	public boolean hasNext() {
-		// TODO Auto-generated method stub
-		return false;
+		return _itr.hasNext();
 	}
+
+	
 
 }

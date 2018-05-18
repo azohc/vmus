@@ -4,16 +4,16 @@ import java.util.*;
 
 public class TFriends implements Iterable {
 
-	private List friendList;
+	private List<String> friendList;
 	
-	public TFriends() {
+	public TFriends() 
+	{
 		friendList = new ArrayList<String>();
 	}
 	
-	public StringIterator iterator() {
-	//TODO -> create iterator to first pos in friendList
-			
-		return null;
+	public StringIterator iterator()
+	{
+			return new StringIterator( friendList.iterator() );
 	}
 	
 }

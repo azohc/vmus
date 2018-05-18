@@ -2,10 +2,11 @@ package model;
 
 import java.sql.SQLException;
 
+import dao.DAOFacade;
 import enums.Language;
 
 public class AppService {
-
+	
 	private Account _account;
 	private Game _game;
 	private Settings _settings;
@@ -19,20 +20,38 @@ public class AppService {
 	private TRequest _tRequest;
 	private TFriends _tFriends;
 	
-	public void applySettings(int vol,Language lang,boolean notif)
-	{ _settings=new Settings();
+	public AppService()
+	{
+		DAOFacade f = new DAOFacade();
+		_account = new Account(f);
+		_settings = new Settings(f);
+		_requests = new Requests(f);
+		_friends = new Friends(f);
+		_game = new Game(f);
+	}
 	
+	public void applySettings(int vol,Language lang,boolean notif)
+	{ 
 		
 	}
 	
 	public  void registerNewUser(String username, String email, String password) throws SQLException
 	{
 		_tAccount=new TAccount(username,email,password);
+		
+		if(!_account.checkUser(username, password))
+		{
+			_account.addUser(_tAccount);
+		}
 	}
 	
 	public boolean loginUser(String username,String password) throws SQLException
 	{
-		_account=new Account(username);
-		return _account.checkUser(username, password);
+		if( _account.checkUser(username, password) )
+		{
+			
+			return true;
+		}
+		return false;
 	}
 }

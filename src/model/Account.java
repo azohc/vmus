@@ -6,16 +6,28 @@ import dao.DAOFacade;
 
 public class Account {
 	String loggedUsername;
-	public Account(String u)
+	TFriends addedFriends;
+	
+	DAOFacade _dao;
+	
+	public Account(DAOFacade dao)
 	{
-		this.loggedUsername=u;
+		_dao = dao;
+		addedFriends = new TFriends();
+	}
+	public void setLoggedUsername(String user)
+	{
+		loggedUsername = user;
 	}
 	public String getLoggedUsername()
 	{
 		return this.loggedUsername;
 	}
-public boolean checkUser(String username,String password) throws SQLException
-{
-	return DAOFacade.checkUser(username, password);
-}
+	public boolean checkUser(String username,String password) throws SQLException
+	{
+		return _dao.checkUser(username, password);
+	}
+	public void addUser(TAccount _tAccount) throws SQLException {
+		_dao.addNewUser(_tAccount);
+	}
 }

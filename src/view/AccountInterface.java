@@ -23,6 +23,7 @@ import controller.Controller;
 @SuppressWarnings("serial")
 public class AccountInterface extends JPanel {
 
+	private Controller ctrl;
 	private JPasswordField loginPass;//this is the password field
 	private JTextArea loginName ;//this is the username field
 	private JPasswordField regPass;//password
@@ -32,7 +33,8 @@ public class AccountInterface extends JPanel {
 	
 	private CardLayout cl;
 	
-	public AccountInterface( ) {
+	public AccountInterface(Controller c) {
+		this.ctrl=c;
 		cl = new CardLayout();
 		setLayout(cl);
 		add(loginInterface(), "login");
@@ -99,16 +101,17 @@ public class AccountInterface extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
            try {
-        	   if(Controller.loginUser(loginName.getText(), loginPass.getText()))
-Controller.changeToGamePanel();
+        	   if(ctrl.loginUser(loginName.getText(), loginPass.getText()))
+        		   ctrl.changeToGamePanel();
         	   else
         		   System.out.println("nu");
 
-		} catch (SQLException e1) {
+           } catch (SQLException e1) 
+           {
 			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-            }
+        	   e1.printStackTrace();
+			}
+           }
         });
 	
 		JPanel panel_1 = new JPanel();
@@ -196,9 +199,10 @@ Controller.changeToGamePanel();
 		panel_1.add(btnRegister);
 		btnRegister.addActionListener(new ActionListener() {
 	            @Override
-	            public void actionPerformed(ActionEvent e) {
+	            public void actionPerformed(ActionEvent e) 
+	            {
 	             try {
-					Controller.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
+					ctrl.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
