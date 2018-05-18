@@ -14,7 +14,6 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
@@ -23,7 +22,6 @@ import controller.Controller;
 @SuppressWarnings("serial")
 public class AccountInterface extends JPanel {
 
-	private Controller ctrl;
 	private JPasswordField loginPass;//this is the password field
 	private JTextArea loginName ;//this is the username field
 	private JPasswordField regPass;//password
@@ -33,8 +31,8 @@ public class AccountInterface extends JPanel {
 	
 	private CardLayout cl;
 	
-	public AccountInterface(Controller c) {
-		this.ctrl=c;
+	public AccountInterface() {
+	
 		cl = new CardLayout();
 		setLayout(cl);
 		add(loginInterface(), "login");
@@ -101,17 +99,16 @@ public class AccountInterface extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
            try {
-        	   if(ctrl.loginUser(loginName.getText(), loginPass.getText()))
-        		   ctrl.changeToGamePanel();
+        	   if(Controller.getInstance().loginUser(loginName.getText(), loginPass.getText()))
+        		   Controller.getInstance().changeToGamePanel();
         	   else
         		   System.out.println("nu");
 
-           } catch (SQLException e1) 
-           {
+		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
-        	   e1.printStackTrace();
-			}
-           }
+			e1.printStackTrace();
+		}
+            }
         });
 	
 		JPanel panel_1 = new JPanel();
@@ -199,10 +196,9 @@ public class AccountInterface extends JPanel {
 		panel_1.add(btnRegister);
 		btnRegister.addActionListener(new ActionListener() {
 	            @Override
-	            public void actionPerformed(ActionEvent e) 
-	            {
+	            public void actionPerformed(ActionEvent e) {
 	             try {
-					ctrl.registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
+					Controller.getInstance().registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();

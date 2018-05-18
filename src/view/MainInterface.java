@@ -36,7 +36,7 @@ public class MainInterface extends JFrame{
 		setContentPane(cardPanel);
 
 	
-		_account = new AccountInterface(ctrl);
+		_account = new AccountInterface();
 		_settings = new SettingsInterface();
 		_game = new GameInterface();
 		
