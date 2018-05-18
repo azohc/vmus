@@ -4,16 +4,15 @@ import java.util.*;
 
 public class TRequest implements Iterable {
 
-	private List requestList;
+	private List<String> requestList;
 	
 	public TRequest() {
 		requestList = new ArrayList<String>();
 	}
 	@Override
-	public StringIterator iterator() {
-		//TODO -> create iterator to first pos in requestList
-				
-		return null;
+	public StringIterator iterator() {				
+		return new StringIterator( requestList.iterator() );
+
 	}
 
 }
