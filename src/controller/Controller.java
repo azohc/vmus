@@ -16,8 +16,8 @@ public class Controller {
 	
 	private Controller () 
 	{
-		appService=new AppService();
-		_mainInterface=new MainInterface(this);
+		appService = new AppService();
+		_mainInterface = new MainInterface();
 	}
 	
 	public static Controller getInstance() {

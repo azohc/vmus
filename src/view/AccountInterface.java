@@ -81,17 +81,6 @@ public class AccountInterface extends JPanel {
 		loginName.setBounds(114, 13, 176, 38);
 		panel_2.add(loginName);
 		
-		
-//		JRadioButton rdbtnNewRadioButton = new JRadioButton("Enabled");
-//		rdbtnNewRadioButton.setBounds(493, 21, 127, 25);
-//		panel_2.add(rdbtnNewRadioButton);
-//		rdbtnNewRadioButton.setSelected(true);
-//		
-//		JLabel lblNewLabel_1 = new JLabel("Remember Me");
-//		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-//		lblNewLabel_1.setBounds(335, 13, 133, 38);
-//		panel_2.add(lblNewLabel_1);
-		
 		JButton btnNewButton = new JButton("Login");
 		btnNewButton.setBounds(402, 66, 141, 57);
 		panel_2.add(btnNewButton);
@@ -102,7 +91,7 @@ public class AccountInterface extends JPanel {
         	   if(Controller.getInstance().loginUser(loginName.getText(), loginPass.getText()))
         		   Controller.getInstance().changeToGamePanel();
         	   else
-        		   System.out.println("nu");
+        		   System.out.println("null");
 
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
@@ -199,11 +188,14 @@ public class AccountInterface extends JPanel {
 	            public void actionPerformed(ActionEvent e) {
 	             try {
 					Controller.getInstance().registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
+					showLogin();
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 	            }
+
+				
 	        });
 		JLabel lblPassword_1 = new JLabel("Password");
 		lblPassword_1.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -224,5 +216,9 @@ public class AccountInterface extends JPanel {
 		panel_1.add(regPassConf);
 		
 		return register;
+	}
+	
+	private void showLogin() {
+		cl.show(this, "login");
 	}
 }
