@@ -7,6 +7,7 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -65,6 +66,7 @@ public class AccountInterface extends JPanel {
 		
 		loginPass = new JPasswordField();
 		loginPass.setBounds(114, 83, 176, 38);
+		loginPass.setBorder(BorderFactory.createEtchedBorder());
 		panel_2.add(loginPass);
 		
 		JLabel lblPassword = new JLabel("Password");
@@ -73,19 +75,20 @@ public class AccountInterface extends JPanel {
 		panel_2.add(lblPassword);
 		
 		loginName = new JTextArea();
+		loginName.setBorder(BorderFactory.createEtchedBorder());
 		loginName.setBounds(114, 13, 176, 38);
 		panel_2.add(loginName);
 		
 		
-		JRadioButton rdbtnNewRadioButton = new JRadioButton("Enabled");
-		rdbtnNewRadioButton.setBounds(493, 21, 127, 25);
-		panel_2.add(rdbtnNewRadioButton);
-		rdbtnNewRadioButton.setSelected(true);
-		
-		JLabel lblNewLabel_1 = new JLabel("Remember Me");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		lblNewLabel_1.setBounds(335, 13, 133, 38);
-		panel_2.add(lblNewLabel_1);
+//		JRadioButton rdbtnNewRadioButton = new JRadioButton("Enabled");
+//		rdbtnNewRadioButton.setBounds(493, 21, 127, 25);
+//		panel_2.add(rdbtnNewRadioButton);
+//		rdbtnNewRadioButton.setSelected(true);
+//		
+//		JLabel lblNewLabel_1 = new JLabel("Remember Me");
+//		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
+//		lblNewLabel_1.setBounds(335, 13, 133, 38);
+//		panel_2.add(lblNewLabel_1);
 		
 		JButton btnNewButton = new JButton("Login");
 		btnNewButton.setBounds(402, 66, 141, 57);
@@ -99,8 +102,8 @@ public class AccountInterface extends JPanel {
 		login.add(panel_1);
 		panel_1.setLayout(null);
 		
-		JLabel lblNewLabel_2 = new JLabel("Dont't have an account? Register here");
-		lblNewLabel_2.setBounds(12, 37, 241, 68);
+		JLabel lblNewLabel_2 = new JLabel("Dont't have an account? Register here:");
+		lblNewLabel_2.setBounds(12, 37, 300, 68);
 		panel_1.add(lblNewLabel_2);
 		
 		JButton btnRegister = new JButton("Register");

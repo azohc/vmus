@@ -34,19 +34,25 @@ public class MainInterface extends JFrame{
 
 	
 		_account = new AccountInterface();
-		cardPanel.add(_account, "account");
-		clayout.show(cardPanel, "account");
+		_settings = new SettingsInterface();
+		_game = new GameInterface();
 		
-		//TODO add more interfaces to card layout, and card layout to game interface -> for different gametypes?
+		cardPanel.add(_account, "account");
+		cardPanel.add(_settings, "settings");
+		cardPanel.add(_game, "game");
+		
+		clayout.show(cardPanel, "game");
+		
 				
 		
 		//DIMENSIONS
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 		int height = (int) (screenSize.height * 0.5);
-		int width = (int) (screenSize.width * 0.4);
+		int width = (int) (screenSize.width * 0.5);
 		setPreferredSize(new Dimension(width, height));
 		
 		setTitle("Virtual Mus L");
+		setResizable(false);
 		setVisible(true);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		pack();

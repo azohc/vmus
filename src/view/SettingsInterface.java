@@ -26,7 +26,7 @@ public class SettingsInterface extends JPanel{
 	private JComboBox comboBox;//FOR LANGUAGE
 
 
-	public SettingsInterface(Controller ctrl) {
+	public SettingsInterface() {
 		initialize();
 	}
 
