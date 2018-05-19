@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+@SuppressWarnings("serial")
 public class GameInterface extends JPanel{
 
 	public JPanel mainPanel;
@@ -69,7 +70,7 @@ public class GameInterface extends JPanel{
 		JPanel toolbar = new JPanel();
 		toolbar.setLayout(new BoxLayout(toolbar, BoxLayout.X_AXIS));
 		
-		ImageIcon set1 = new ImageIcon(loadImage("settings-512.png"));
+		ImageIcon set1 = new ImageIcon(loadImage("settings.png"));
 		Image img1 = set1.getImage();
 		Image img2 = img1.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon set2 = new ImageIcon(img2);
@@ -77,7 +78,7 @@ public class GameInterface extends JPanel{
 				
 		toolbar.add(settings);
 		
-		ImageIcon fri1 = new ImageIcon(loadImage("655186-200.png"));
+		ImageIcon fri1 = new ImageIcon(loadImage("friends1.png"));
 		Image frii1 = fri1.getImage();
 		Image frii2 = frii1.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon fri2 = new ImageIcon(frii2);
@@ -95,7 +96,7 @@ public class GameInterface extends JPanel{
 		
 		toolbar.add(Box.createRigidArea(new Dimension(136,0)));
 		
-		ImageIcon out1 = new ImageIcon(loadImage("log_out.png"));
+		ImageIcon out1 = new ImageIcon(loadImage("LogOut.png"));
 		Image outi1 = out1.getImage();
 		Image outi2 = outi1.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon out2 = new ImageIcon(outi2);
