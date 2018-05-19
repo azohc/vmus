@@ -87,6 +87,11 @@ public class SettingsInterface extends JPanel{
 		comboBox.setBounds(168, 48, 111, 56);
 		panel_1.add(comboBox);
 		JButton btnNewButton = new JButton("Save Settings");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			    Controller.getInstance().changeToGamePanel();
+			}
+		});
 		btnNewButton.setBounds(500, 48, 141, 57);
 		
 		panel_1.add(btnNewButton);

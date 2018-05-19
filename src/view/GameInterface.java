@@ -17,10 +17,14 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import controller.Controller;
+
 @SuppressWarnings("serial")
 public class GameInterface extends JPanel {
 
 	public JPanel mainPanel;
+	public JPanel settings;
+	public JPanel friends;
 	private CardLayout cl;
 
 	public GameInterface() {
@@ -115,6 +119,12 @@ public class GameInterface extends JPanel {
 		ImageIcon set2 = new ImageIcon(img2);
 		JButton settings = new JButton(set2);
 		settings.setToolTipText("Settings");
+		settings.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Controller.getInstance().changeToSettingsPanel();				
+			}
+			
+		});
 		toolbar.add(settings);
 
 		ImageIcon fri1 = new ImageIcon(loadImage("friends.png"));
@@ -123,6 +133,12 @@ public class GameInterface extends JPanel {
 		ImageIcon fri2 = new ImageIcon(frii2);
 		JButton friends = new JButton(fri2);
 		friends.setToolTipText("Friends");
+		friends.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Controller.getInstance().changeToFriendPanel();				
+			}
+			
+		});
 		toolbar.add(friends);
 
 		ImageIcon req1 = new ImageIcon(loadImage("request.png"));
@@ -131,6 +147,12 @@ public class GameInterface extends JPanel {
 		ImageIcon req2 = new ImageIcon(reqi2);
 		JButton request = new JButton(req2);
 		request.setToolTipText("Requests");
+		request.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Controller.getInstance().changeToRequestPanel();				
+			}
+			
+		});
 		toolbar.add(request);
 
 		toolbar.add(Box.createRigidArea(new Dimension(136, 0)));
@@ -141,7 +163,12 @@ public class GameInterface extends JPanel {
 		ImageIcon out2 = new ImageIcon(outi2);
 		JButton log_out = new JButton(out2);
 		log_out.setToolTipText("Log out");
-
+		log_out.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e) {
+				
+				Controller.getInstance().changeToAccountPanel();
+			}
+	});
 		toolbar.add(log_out);
 
 		mainPanel.add(toolbar, BorderLayout.SOUTH);

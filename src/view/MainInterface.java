@@ -36,11 +36,15 @@ public class MainInterface extends JFrame{
 	
 		_account = new AccountInterface();
 		_settings = new SettingsInterface();
+		_friend = new FriendInterface();
 		_game = new GameInterface();
+		_request = new RequestInterface();
 		
 		cardPanel.add(_account, "account");
 		cardPanel.add(_settings, "settings");
 		cardPanel.add(_game, "game");
+		cardPanel.add(_friend, "friend");
+		cardPanel.add(_request, "request");
 		
 		clayout.show(cardPanel, "account");
 		

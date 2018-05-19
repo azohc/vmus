@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
@@ -75,6 +77,11 @@ public class FriendInterface extends JPanel{
 		Image  back3 =  back2.getScaledInstance(80, 80, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon  back4 = new ImageIcon(back3);
 		JButton  back = new JButton (back4);
+		back.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			    Controller.getInstance().changeToGamePanel();
+		   }
+		});
 		backButton.add(back);
 		
 		mainPanel.add(backButton, BorderLayout.PAGE_END);		
