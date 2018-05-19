@@ -99,10 +99,39 @@ public class DatabaseDAO {
 
 	}
 
+	
 //	public static void main(String[] args) throws SQLException {
 //		DatabaseDAO db = DatabaseDAO.getInstance();
 //		System.out.println(db.checkUser("tester2", "12345"));
 //		db.addNewUser("tester","test@ucm.es", "12345");
 //
 //	}
+	
+	public String getPassByEmail(String email) throws SQLException
+	{
+		Statement stmt = conn.createStatement();
+
+		// Step 3: Execute a SQL SELECT query, the query result
+		// is returned in a 'ResultSet' object.
+		try {
+			String strSelect = "select password from users where email='" + email + "'";
+			System.out.println("The SQL query is: " + strSelect); // Echo For debugging
+			System.out.println();
+
+			ResultSet rset = stmt.executeQuery(strSelect);
+
+			// Step 4: Process the ResultSet by scrolling the cursor forward via next().
+			// For each row, retrieve the contents of the cells with getXxx(columnName).
+			if (rset.next()) {
+				String pass = rset.getString("password");
+				return pass;
+			}
+		}
+
+		catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		return "User not valid";
+
+	}
 }

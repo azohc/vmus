@@ -28,7 +28,9 @@ public class DAOFacade {
 	public boolean checkUsernameExists(String username) throws SQLException {
 		return database.checkUsernameExists(username);
 	}
-
+	public String getPassByEmail(String email) throws SQLException {
+		return database.getPassByEmail(email);
+	}
 	public void addNewUser(TAccount _user) throws SQLException
 	{
 		database.addNewUser(_user);

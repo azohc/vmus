@@ -36,6 +36,11 @@ public class Controller {
 		return appService.loginUser(username, password);
 	}
 	
+	public void recoverPass(String email) throws SQLException
+	{
+		appService.recoverPass(email);
+	}
+	
 	public void changeToGamePanel()
 	{
 		_mainInterface.clayout.show(_mainInterface.cardPanel, "game");

@@ -30,6 +30,9 @@ public class AccountInterface extends JPanel {
 	private JTextArea regName;//username field
 	private JTextArea regEmail;//email field
 	
+
+	private JTextArea recoverEmail;//email field
+	
 	private CardLayout cl;
 	
 	public AccountInterface() {
@@ -38,6 +41,7 @@ public class AccountInterface extends JPanel {
 		setLayout(cl);
 		add(loginInterface(), "login");
 		add(registerInterface(), "register");
+		add(recoverEmailInterface(), "recover");
 		cl.show(this, "login");
 	}
 	
@@ -218,6 +222,78 @@ public class AccountInterface extends JPanel {
 		regPassConf = new JPasswordField();
 		regPassConf.setBounds(191, 65, 176, 38);
 		panel_1.add(regPassConf);
+		
+		return register;
+	}
+	
+	private JPanel recoverEmailInterface() {
+		JPanel register = new JPanel();
+		
+		register.setLayout(new BoxLayout(register, BoxLayout.Y_AXIS));
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GRAY);
+		register.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Recover Password Menu");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 34));
+		lblNewLabel.setBounds(190, 5, 285, 60);
+		panel.add(lblNewLabel);
+		
+		JButton btnNewButton_1 = new JButton("Back");
+		btnNewButton_1.setBounds(474, 25, 150, 50);
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				cl.show(AccountInterface.this, "login");
+			}
+		});
+	
+
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(UIManager.getColor("Button.background"));
+		panel_2.setPreferredSize(new Dimension(50, 500));
+		
+		panel_2.add(btnNewButton_1);
+		register.add(panel_2);
+		panel_2.setLayout(null);
+		
+		
+		JLabel lblPassword = new JLabel("Email");
+		lblPassword.setFont(new Font("Tahoma", Font.BOLD, 16));
+		lblPassword.setBounds(12, 74, 90, 38);
+		panel_2.add(lblPassword);
+		
+		recoverEmail = new JTextArea();
+		recoverEmail.setBorder(new EtchedBorder());
+		recoverEmail.setBounds(192, 22, 176, 38);
+		panel_2.add(recoverEmail);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(UIManager.getColor("Button.background"));
+		panel_1.setForeground(Color.GRAY);
+		panel_1.setPreferredSize(new Dimension(50, 500));
+
+		register.add(panel_1);
+		panel_1.setLayout(null);
+		
+		JButton btnRegister = new JButton("Recover Email");
+		btnRegister.setBounds(250, 50, 141, 57);
+		panel_1.add(btnRegister);
+		btnRegister.addActionListener(new ActionListener() {
+	            @Override
+	            public void actionPerformed(ActionEvent e) {
+	             try {
+					Controller.getInstance().recoverPass(recoverEmail.getText());
+					showLogin();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+	            }
+
+				
+	        });
 		
 		return register;
 	}
