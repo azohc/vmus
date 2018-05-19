@@ -27,7 +27,7 @@ public class GameInterface extends JPanel{
 	
 	private void initGUI() {
 		JPanel panelPresentacion = new JPanel();
-		JLabel lblNewLabel = new JLabel("Wellcome to virtual mus!");
+		JLabel lblNewLabel = new JLabel("Welcome to virtual mus!");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 34));
 		lblNewLabel.setBounds(190, 5, 285, 60);
 		panelPresentacion.add(lblNewLabel);

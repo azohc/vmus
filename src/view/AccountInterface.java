@@ -2,8 +2,11 @@ package view;
 
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.Insets;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
@@ -16,6 +19,9 @@ import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextArea;
 import javax.swing.UIManager;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.Border;
+import javax.swing.border.EtchedBorder;
 
 import controller.Controller;
 
@@ -139,18 +145,19 @@ public class AccountInterface extends JPanel {
 		panel.add(lblNewLabel);
 		
 		JButton btnNewButton_1 = new JButton("Back");
-		btnNewButton_1.setBounds(12, 5, 97, 25);
+		btnNewButton_1.setBounds(474, 25, 141, 57);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cl.show(AccountInterface.this, "login");
 			}
 		});
-		panel.add(btnNewButton_1);
+	
 
 		JPanel panel_2 = new JPanel();
 		panel_2.setBackground(UIManager.getColor("Button.background"));
 		panel_2.setPreferredSize(new Dimension(50, 500));
-
+		
+		panel_2.add(btnNewButton_1);
 		register.add(panel_2);
 		panel_2.setLayout(null);
 		
@@ -160,6 +167,7 @@ public class AccountInterface extends JPanel {
 		panel_2.add(lblVolume);
 		
 		regName = new JTextArea();
+		regName.setBorder(new EtchedBorder());
 		regName.setBounds(192, 83, 176, 38);
 		panel_2.add(regName);
 		
@@ -169,6 +177,7 @@ public class AccountInterface extends JPanel {
 		panel_2.add(lblPassword);
 		
 		regEmail = new JTextArea();
+		regEmail.setBorder(new EtchedBorder());
 		regEmail.setBounds(192, 22, 176, 38);
 		panel_2.add(regEmail);
 		
