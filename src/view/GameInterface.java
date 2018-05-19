@@ -40,7 +40,7 @@ public class GameInterface extends JPanel{
 		gamesButtons.setLayout(new BoxLayout(gamesButtons, BoxLayout.X_AXIS));
 		gamesButtons.setPreferredSize(new Dimension(671, 200));
 		
-		ImageIcon type1_2 = new ImageIcon(loadImage("2Player.png"));
+		ImageIcon type1_2 = new ImageIcon(loadImage("2Players.png"));
 		Image typei1_2 = type1_2.getImage();
 		Image typei2_2 = typei1_2.getScaledInstance(190, 190, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon type2_2 = new ImageIcon(typei2_2);
@@ -78,7 +78,7 @@ public class GameInterface extends JPanel{
 				
 		toolbar.add(settings);
 		
-		ImageIcon fri1 = new ImageIcon(loadImage("friends1.png"));
+		ImageIcon fri1 = new ImageIcon(loadImage("friends.png"));
 		Image frii1 = fri1.getImage();
 		Image frii2 = frii1.getScaledInstance(100, 100, java.awt.Image.SCALE_SMOOTH);
 		ImageIcon fri2 = new ImageIcon(frii2);
