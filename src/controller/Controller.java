@@ -40,7 +40,20 @@ public class Controller {
 	{
 		_mainInterface.clayout.show(_mainInterface.cardPanel, "game");
 	}
-
+	public void changeToSettingsPanel() {
+		  _mainInterface.clayout.show(_mainInterface.cardPanel, "settings");
+	}
+	public void changeToFriendPanel() {
+		  _mainInterface.clayout.show(_mainInterface.cardPanel, "friend");
+	}
+	public void changeToRequestPanel() {
+		  _mainInterface.clayout.show(_mainInterface.cardPanel, "request");
+	}
+	public void changeToAccountPanel() {
+	
+		  _mainInterface.clayout.show(_mainInterface.cardPanel, "account");
+	
+	}
 	
 
 
