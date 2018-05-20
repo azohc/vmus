@@ -3,7 +3,7 @@
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
   <class id="1" language="java" name="dao.TextDAO" project="virtualMus" file="/virtualMus/src/dao/TextDAO.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="124" x="1432" y="1385"/>    
+    <position height="207" width="124" x="1746" y="1439"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -12,7 +12,7 @@
   </class>  
   <class id="2" language="java" name="dao.DAOFacade" project="virtualMus" file="/virtualMus/src/dao/DAOFacade.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="210" x="1775" y="1120"/>    
+    <position height="225" width="210" x="1486" y="1174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -21,7 +21,7 @@
   </class>  
   <class id="3" language="java" name="model.Settings" project="virtualMus" file="/virtualMus/src/model/Settings.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="132" x="2017" y="783"/>    
+    <position height="99" width="132" x="1268" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="model.AppService" project="virtualMus" 
     file="/virtualMus/src/model/AppService.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="230" x="1948" y="374"/>    
+    <position height="153" width="230" x="1996" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="controller.Controller" project="virtualMus" 
     file="/virtualMus/src/controller/Controller.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="230" x="1718" y="37"/>    
+    <position height="243" width="230" x="1291" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -48,7 +48,7 @@
   </class>  
   <class id="6" language="java" name="view.RequestInterface" project="virtualMus" 
     file="/virtualMus/src/view/RequestInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="141" x="909" y="783"/>    
+    <position height="135" width="141" x="463" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -57,7 +57,7 @@
   </class>  
   <class id="7" language="java" name="model.StringIterator" project="virtualMus" 
     file="/virtualMus/src/model/StringIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="170" x="563" y="37"/>    
+    <position height="153" width="170" x="66" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -66,7 +66,7 @@
   </class>  
   <class id="8" language="java" name="model.TFriends" project="virtualMus" file="/virtualMus/src/model/TFriends.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="134" x="2332" y="1120"/>    
+    <position height="117" width="134" x="2185" y="1174"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -75,7 +75,7 @@
   </class>  
   <class id="9" language="java" name="view.FriendInterface" project="virtualMus" 
     file="/virtualMus/src/view/FriendInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="141" x="728" y="783"/>    
+    <position height="135" width="141" x="41" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -84,7 +84,7 @@
   </class>  
   <interface id="10" language="java" name="model.ListIterator" project="virtualMus" 
     file="/virtualMus/src/model/ListIterator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="115" x="563" y="374"/>    
+    <position height="117" width="115" x="66" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -93,7 +93,7 @@
   </interface>  
   <class id="11" language="java" name="dao.Ini" project="virtualMus" file="/virtualMus/src/dao/Ini.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="297" width="169" x="183" y="37"/>    
+    <position height="297" width="169" x="302" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -102,7 +102,7 @@
   </class>  
   <class id="12" language="java" name="dao.IniError" project="virtualMus" file="/virtualMus/src/dao/IniError.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="131" x="392" y="37"/>    
+    <position height="99" width="131" x="527" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -111,7 +111,7 @@
   </class>  
   <class id="13" language="java" name="view.SettingsInterface" project="virtualMus" 
     file="/virtualMus/src/view/SettingsInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="201" x="42" y="783"/>    
+    <position height="153" width="201" x="222" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -120,7 +120,7 @@
   </class>  
   <enumeration id="14" language="java" name="enums.Language" project="virtualMus" 
     file="/virtualMus/src/enums/Language.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1163" y="1267"/>    
+    <position height="135" width="135" x="1996" y="1732"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -129,7 +129,7 @@
   </enumeration>  
   <class id="15" language="java" name="controller.Main" project="virtualMus" file="/virtualMus/src/controller/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="99" width="113" x="1565" y="37"/>    
+    <position height="99" width="113" x="715" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -138,7 +138,7 @@
   </class>  
   <interface id="16" language="java" name="model.Iterable" project="virtualMus" 
     file="/virtualMus/src/model/Iterable.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="2622" y="1071"/>    
+    <position height="81" width="140" x="2892" y="1439"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -147,7 +147,7 @@
   </interface>  
   <enumeration id="17" language="java" name="enums.RequestType" project="virtualMus" 
     file="/virtualMus/src/enums/RequestType.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="161" x="773" y="37"/>    
+    <position height="135" width="161" x="885" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -156,7 +156,7 @@
   </enumeration>  
   <class id="18" language="java" name="view.GameInterface" project="virtualMus" 
     file="/virtualMus/src/view/GameInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="261" width="192" x="496" y="783"/>    
+    <position height="261" width="192" x="857" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -165,7 +165,7 @@
   </class>  
   <class id="19" language="java" name="model.Game" project="virtualMus" file="/virtualMus/src/model/Game.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="121" x="1508" y="783"/>    
+    <position height="81" width="121" x="1609" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -174,7 +174,7 @@
   </class>  
   <class id="20" language="java" name="model.TAccount" project="virtualMus" file="/virtualMus/src/model/TAccount.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="170" x="1298" y="783"/>    
+    <position height="243" width="170" x="2352" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -183,48 +183,52 @@
   </class>  
   <class id="21" language="java" name="model.Account" project="virtualMus" file="/virtualMus/src/model/Account.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="207" width="237" x="2189" y="783"/>    
+    <position height="189" width="186" x="1770" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="model.TGame" project="virtualMus" file="/virtualMus/src/model/TGame.java" 
+  <class id="22" language="java" name="model.AppService.SMTPAuthenticator" project="virtualMus" 
+    file="/virtualMus/src/model/AppService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="290" x="2562" y="783"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="model.TGame" project="virtualMus" file="/virtualMus/src/model/TGame.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="87" x="2670" y="783"/>    
+    <position height="81" width="87" x="2225" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="model.TSettings" project="virtualMus" file="/virtualMus/src/model/TSettings.java" 
+  <class id="24" language="java" name="model.TSettings" project="virtualMus" file="/virtualMus/src/model/TSettings.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="225" width="168" x="1090" y="783"/>    
+    <position height="225" width="168" x="1996" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="24" language="java" name="model.TRequest" project="virtualMus" file="/virtualMus/src/model/TRequest.java" 
+  <class id="25" language="java" name="model.TRequest" project="virtualMus" file="/virtualMus/src/model/TRequest.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="143" x="2487" y="783"/>    
+    <position height="117" width="143" x="2892" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="25" language="java" name="dao" project="virtualMus" file="/virtualMus/src/dao" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="1115" y="37"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
   <class id="26" language="java" name="dao.DatabaseDAO" project="virtualMus" file="/virtualMus/src/dao/DatabaseDAO.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="243" width="210" x="1775" y="1385"/>    
+    <position height="243" width="210" x="1486" y="1439"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -233,159 +237,154 @@
   </class>  
   <class id="27" language="java" name="view.MainInterface" project="virtualMus" 
     file="/virtualMus/src/view/MainInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="153" width="141" x="718" y="374"/>    
+    <position height="153" width="141" x="586" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="28" language="java" name="enums" project="virtualMus" file="/virtualMus/src/enums" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="42" y="37"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <class id="29" language="java" name="view.AccountInterface" project="virtualMus" 
+  <class id="28" language="java" name="view.AccountInterface" project="virtualMus" 
     file="/virtualMus/src/view/AccountInterface.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="297" width="173" x="283" y="783"/>    
+    <position height="351" width="173" x="644" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="30" language="java" name="enums.GameType" project="virtualMus" 
+  <enumeration id="29" language="java" name="enums.GameType" project="virtualMus" 
     file="/virtualMus/src/enums/GameType.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="135" width="128" x="1256" y="37"/>    
+    <position height="135" width="128" x="1104" y="37"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="31" language="java" name="dao.IniSection" project="virtualMus" file="/virtualMus/src/dao/IniSection.java" 
+  <class id="30" language="java" name="dao.IniSection" project="virtualMus" file="/virtualMus/src/dao/IniSection.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="369" width="207" x="183" y="374"/>    
+    <position height="369" width="207" x="302" y="374"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="32" language="java" name="model.Requests" project="virtualMus" file="/virtualMus/src/model/Requests.java" 
+  <class id="31" language="java" name="model.Requests" project="virtualMus" file="/virtualMus/src/model/Requests.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="139" x="1838" y="783"/>    
+    <position height="81" width="139" x="1089" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="33" language="java" name="model.Friends" project="virtualMus" file="/virtualMus/src/model/Friends.java" 
+  <class id="32" language="java" name="model.Friends" project="virtualMus" file="/virtualMus/src/model/Friends.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="81" width="129" x="1669" y="783"/>    
+    <position height="81" width="129" x="1440" y="783"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <package id="34" language="java" name="view" project="virtualMus" file="/virtualMus/src/view" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="974" y="37"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
-  <package id="35" language="java" name="model" project="virtualMus" file="/virtualMus/src/model" binary="false" 
-    corner="BOTTOM_RIGHT">    
-    <position height="50" width="101" x="1424" y="37"/>    
-    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
-  </package>  
+  <association id="33">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="34" name="instancia"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="36">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="37" name="appService"/>      
-      <multiplicity id="38" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="39">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="40" name="addedFriends"/>      
-      <multiplicity id="41" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="42">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="43" name="_tSettings"/>      
-      <multiplicity id="44" minimum="0" maximum="1"/>    
+      <attribute id="37" name="_tGame"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="23" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="40" name="_friends"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="32" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="43" name="instance"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="45">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="46" name="textFile"/>      
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="46" name="_requests"/>      
       <multiplicity id="47" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="48">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="49" name="_account"/>      
-      <multiplicity id="50" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="29" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="51">    
-    <end type="SOURCE" refId="8"/>    
-    <end type="TARGET" refId="16"/>  
-  </realization>  
-  <association id="52">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="53" name="lang"/>      
-      <multiplicity id="54" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="55">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="56" name="_friends"/>      
-      <multiplicity id="57" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="33" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="58">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="59" name="_settings"/>      
-      <multiplicity id="60" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="61">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="62" name="_tAccount"/>      
-      <multiplicity id="63" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="20" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="64">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="65" name="_iniSections"/>      
-      <multiplicity id="66" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="31" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="48">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="49" name="_account"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="51">    
+    <bendpoint x="2005" y="1174"/>    
+    <bendpoint x="2005" y="1439"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="52" name="lang"/>      
+      <multiplicity id="53" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="54">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="55" name="addedFriends"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="57">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <association id="58">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="59" name="_dao"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="61">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="62" name="_settings"/>      
+      <multiplicity id="63" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="64">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="65" name="_request"/>      
+      <multiplicity id="66" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="67">    
-    <bendpoint x="2456" y="783"/>    
+    <bendpoint x="2194" y="783"/>    
     <end type="SOURCE" refId="4" navigable="false">      
       <attribute id="68" name="_tFriends"/>      
       <multiplicity id="69" minimum="0" maximum="1"/>    
@@ -393,94 +392,92 @@
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="70">    
+  <association id="70">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="71" name="_dao"/>      
+      <multiplicity id="72" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="73">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="74" name="_dao"/>      
+      <multiplicity id="75" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="76">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="77" name="database"/>      
+      <multiplicity id="78" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="79">    
     <end type="SOURCE" refId="7"/>    
     <end type="TARGET" refId="10"/>  
   </realization>  
-  <association id="71">    
-    <end type="SOURCE" refId="32" navigable="false">      
-      <attribute id="72" name="_dao"/>      
-      <multiplicity id="73" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="74">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="75" name="_request"/>      
-      <multiplicity id="76" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="77">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="78" name="_dao"/>      
-      <multiplicity id="79" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <association id="80">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="81" name="_settings"/>      
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="81" name="lang"/>      
       <multiplicity id="82" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="83">    
-    <bendpoint x="1099" y="1120"/>    
-    <bendpoint x="1099" y="1385"/>    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="84" name="lang"/>      
-      <multiplicity id="85" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="86">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="87" name="_dao"/>      
-      <multiplicity id="88" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="89">    
+  <association id="83">    
     <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="90" name="_friend"/>      
-      <multiplicity id="91" minimum="0" maximum="1"/>    
+      <attribute id="84" name="_friend"/>      
+      <multiplicity id="85" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="86">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="87" name="textFile"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="89">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="90" name="_tSettings"/>      
+      <multiplicity id="91" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="92">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="93" name="_game"/>      
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="93" name="appService"/>      
       <multiplicity id="94" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="95">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="96" name="_account"/>      
-      <multiplicity id="97" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="98">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="99" name="_mainInterface"/>      
-      <multiplicity id="100" minimum="0" maximum="1"/>    
+      <attribute id="96" name="_mainInterface"/>      
+      <multiplicity id="97" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="27" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="98">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="99" name="_game"/>      
+      <multiplicity id="100" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <association id="101">    
-    <end type="SOURCE" refId="19" navigable="false">      
+    <end type="SOURCE" refId="32" navigable="false">      
       <attribute id="102" name="_dao"/>      
       <multiplicity id="103" minimum="0" maximum="1"/>    
     </end>    
@@ -488,73 +485,70 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="104">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="105" name="_requests"/>      
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="105" name="_settings"/>      
       <multiplicity id="106" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="32" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="107">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="108" name="_game"/>      
+      <attribute id="108" name="_tAccount"/>      
       <multiplicity id="109" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="110">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="111" name="_account"/>      
+      <multiplicity id="112" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="28" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="113">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="114" name="_game"/>      
+      <multiplicity id="115" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="19" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="110">    
+  <association id="116">    
     <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="111" name="_tRequest"/>      
-      <multiplicity id="112" minimum="0" maximum="1"/>    
+      <attribute id="117" name="_tRequest"/>      
+      <multiplicity id="118" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="24" navigable="true"/>    
+    <end type="TARGET" refId="25" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="113">    
-    <end type="SOURCE" refId="33" navigable="false">      
-      <attribute id="114" name="_dao"/>      
-      <multiplicity id="115" minimum="0" maximum="1"/>    
+  <association id="119">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="120" name="_iniSections"/>      
+      <multiplicity id="121" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="30" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="122">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="123" name="_dao"/>      
+      <multiplicity id="124" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="116">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="117" name="database"/>      
-      <multiplicity id="118" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="119">    
-    <end type="SOURCE" refId="24"/>    
+  <nesting id="125">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="22"/>  
+  </nesting>  
+  <realization id="126">    
+    <bendpoint x="2901" y="1174"/>    
+    <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="16"/>  
   </realization>  
-  <association id="120">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="121" name="instance"/>      
-      <multiplicity id="122" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="123">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="124" name="_tGame"/>      
-      <multiplicity id="125" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="22" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="126">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="127" name="instancia"/>      
-      <multiplicity id="128" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="26" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    

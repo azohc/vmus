@@ -29,9 +29,11 @@ public class AccountInterface extends JPanel {
 	private JPasswordField regPassConf;//password confirmation
 	private JTextArea regName;//username field
 	private JTextArea regEmail;//email field
-	
-
 	private JTextArea recoverEmail;//email field
+	
+	private static String LOGIN = "login";
+	private static String REGISTER = "register";
+	private static String RECOVER = "recover";
 	
 	private CardLayout cl;
 	
@@ -39,10 +41,10 @@ public class AccountInterface extends JPanel {
 	
 		cl = new CardLayout();
 		setLayout(cl);
-		add(loginInterface(), "login");
-		add(registerInterface(), "register");
-		add(recoverEmailInterface(), "recover");
-		cl.show(this, "login");
+		add(loginInterface(), LOGIN);
+		add(registerInterface(), REGISTER);
+		add(recoverEmailInterface(), RECOVER);
+		cl.show(this, LOGIN);
 	}
 	
 	private JPanel loginInterface() {
@@ -104,6 +106,17 @@ public class AccountInterface extends JPanel {
 		}
             }
         });
+		
+		
+		JButton recoveryBtn = new JButton("Password Recovery");
+		recoveryBtn.setBounds(677, 66, 200, 57);
+		panel_2.add(recoveryBtn);
+		recoveryBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	switchPanel(RECOVER);
+            }
+        });
 	
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
@@ -122,7 +135,7 @@ public class AccountInterface extends JPanel {
 		panel_1.add(btnRegister);
 		btnRegister.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				cl.show(AccountInterface.this, "register");
+				switchPanel(REGISTER);
 			}
 		});
 		return login;
@@ -147,7 +160,7 @@ public class AccountInterface extends JPanel {
 		btnNewButton_1.setBounds(474, 25, 141, 57);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				cl.show(AccountInterface.this, "login");
+				switchPanel(LOGIN);
 			}
 		});
 	
@@ -196,7 +209,7 @@ public class AccountInterface extends JPanel {
 	            public void actionPerformed(ActionEvent e) {
 	             try {
 					Controller.getInstance().registerNewUser(regName.getText(),regEmail.getText(), regPass.getText());
-					showLogin();
+					switchPanel(LOGIN);
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
@@ -245,7 +258,7 @@ public class AccountInterface extends JPanel {
 		btnNewButton_1.setBounds(100, 200, 100, 50);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				cl.show(AccountInterface.this, "login");
+				switchPanel(LOGIN);
 			}
 		});
 	
@@ -277,20 +290,18 @@ public class AccountInterface extends JPanel {
 	            public void actionPerformed(ActionEvent e) {
 	             try {
 					Controller.getInstance().recoverPass(recoverEmail.getText());
-					showLogin();
+					switchPanel(LOGIN);
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
 	            }
-
-				
 	        });
 		
 		return register;
 	}
 	
-	private void showLogin() {
-		cl.show(this, "login");
+	private void switchPanel(String s) {
+		cl.show(this, s);
 	}
 }
