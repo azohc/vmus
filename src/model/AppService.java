@@ -3,9 +3,8 @@ package model;
 import java.sql.SQLException;
 import java.util.Properties;
 
-import javax.mail.Authenticator;
-import javax.mail.PasswordAuthentication;
-import javax.mail.Session;
+import javax.mail.*;
+import javax.mail.internet.*;
 
 import dao.DAOFacade;
 import enums.Language;
@@ -69,21 +68,35 @@ public class AppService {
 			else
 			{
 				Properties props = new Properties();
-				props.put("mail.smtp.host", "smtp.gmail.com"); //SMTP Host
-				props.put("mail.smtp.port", "587"); //TLS Port
-				props.put("mail.smtp.auth", "true"); //enable authentication
-				props.put("mail.smtp.starttls.enable", "true"); //enable STARTTLS
-				
-				   //create Authenticator object to pass in Session.getInstance argument
-				Authenticator auth = new Authenticator() {
-					//override the getPasswordAuthentication method
-					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication("virtualmusgame@gmail.com", "virtualMus10");
-					}
-				};
-				Session session = Session.getInstance(props, auth);
-				
-				_account.sendEmail(session, email,"Password recovery", pass);
+				props.put("mail.smtp.user", "virtualmusgame@gmail.com");
+				props.put("mail.smtp.host", "smtp.gmail.com");
+				props.put("mail.smtp.port", "465");
+				props.put("mail.smtp.starttls.enable", "true");
+				props.put("mail.smtp.auth", "true");
+				props.put("mail.smtp.socketFactory.port", "465");
+				props.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+				props.put("mail.smtp.socketFactory.fallback", "false");
+				SecurityManager security = System.getSecurityManager();
+				try {
+					Authenticator auth = new SMTPAuthenticator();
+					Session session = Session.getInstance(props, auth);
+					MimeMessage msg = new MimeMessage(session);
+					msg.setText(pass);
+					msg.setSubject("Recovery Password");
+					msg.setFrom(new InternetAddress("virtualmusgame@gmail.com"));
+					msg.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
+					Transport.send(msg);
+					System.out.println("Message send Successfully");
+				}
+
+				catch (Exception mex) {
+					mex.printStackTrace();
+				}
 			}
+	}
+	public class SMTPAuthenticator extends javax.mail.Authenticator {
+		public PasswordAuthentication getPasswordAuthentication() {
+			return new PasswordAuthentication("virtualmusgame@gmail.com", "virtualMus10");
+		}
 	}
 }

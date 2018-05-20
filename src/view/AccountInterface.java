@@ -238,11 +238,11 @@ public class AccountInterface extends JPanel {
 		
 		JLabel lblNewLabel = new JLabel("Recover Password Menu");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 34));
-		lblNewLabel.setBounds(190, 5, 285, 60);
+		lblNewLabel.setBounds(190, 15, 285, 60);
 		panel.add(lblNewLabel);
 		
 		JButton btnNewButton_1 = new JButton("Back");
-		btnNewButton_1.setBounds(474, 25, 150, 50);
+		btnNewButton_1.setBounds(100, 200, 100, 50);
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				cl.show(AccountInterface.this, "login");
@@ -266,20 +266,12 @@ public class AccountInterface extends JPanel {
 		
 		recoverEmail = new JTextArea();
 		recoverEmail.setBorder(new EtchedBorder());
-		recoverEmail.setBounds(192, 22, 176, 38);
+		recoverEmail.setBounds(95, 74, 176, 38);
 		panel_2.add(recoverEmail);
 		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(UIManager.getColor("Button.background"));
-		panel_1.setForeground(Color.GRAY);
-		panel_1.setPreferredSize(new Dimension(50, 500));
-
-		register.add(panel_1);
-		panel_1.setLayout(null);
-		
 		JButton btnRegister = new JButton("Recover Email");
-		btnRegister.setBounds(250, 50, 141, 57);
-		panel_1.add(btnRegister);
+		btnRegister.setBounds(400, 74, 141, 38);
+		panel_2.add(btnRegister);
 		btnRegister.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
