@@ -8,6 +8,7 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -85,7 +86,15 @@ public class RequestInterface extends JPanel {
 		JButton  back = new JButton (back4);
 		back.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				 Controller.getInstance().changeToGamePanel();
+				 try {
+					Controller.getInstance().changeToGamePanel();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 		   }
 		});
 		backButton.add(back);

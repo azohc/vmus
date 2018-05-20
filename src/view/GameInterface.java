@@ -9,6 +9,7 @@ import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -121,7 +122,15 @@ public class GameInterface extends JPanel {
 		settings.setToolTipText("Settings");
 		settings.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Controller.getInstance().changeToSettingsPanel();				
+				try {
+					Controller.getInstance().changeToSettingsPanel();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}				
 			}
 			
 		});
@@ -135,7 +144,15 @@ public class GameInterface extends JPanel {
 		friends.setToolTipText("Friends");
 		friends.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Controller.getInstance().changeToFriendPanel();				
+				try {
+					Controller.getInstance().changeToFriendPanel();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}				
 			}
 			
 		});
@@ -149,7 +166,15 @@ public class GameInterface extends JPanel {
 		request.setToolTipText("Requests");
 		request.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				Controller.getInstance().changeToRequestPanel();				
+				try {
+					Controller.getInstance().changeToRequestPanel();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}				
 			}
 			
 		});
@@ -166,7 +191,15 @@ public class GameInterface extends JPanel {
 		log_out.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				
-				Controller.getInstance().changeToAccountPanel();
+				try {
+					Controller.getInstance().changeToAccountPanel();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 	});
 		toolbar.add(log_out);

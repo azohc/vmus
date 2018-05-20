@@ -96,11 +96,16 @@ public class AccountInterface extends JPanel {
             public void actionPerformed(ActionEvent e) {
            try {
         	   if(Controller.getInstance().loginUser(loginName.getText(), loginPass.getText()))
-        		   Controller.getInstance().changeToGamePanel();
+        		   {Controller.getInstance().changeToGamePanel();
+        		   FriendInterface.friendsList();
+        		   }
         	   else
         		   System.out.println("null");
 
 		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
@@ -213,6 +218,9 @@ public class AccountInterface extends JPanel {
 				} catch (SQLException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
 				}
 	            }
 
@@ -292,6 +300,9 @@ public class AccountInterface extends JPanel {
 					Controller.getInstance().recoverPass(recoverEmail.getText());
 					switchPanel(LOGIN);
 				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (InterruptedException e1) {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}

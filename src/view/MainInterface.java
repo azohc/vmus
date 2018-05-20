@@ -4,6 +4,7 @@ import java.awt.CardLayout;
 import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Toolkit;
+import java.sql.SQLException;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -22,12 +23,12 @@ public class MainInterface extends JFrame{
 	public JPanel cardPanel;
 	public CardLayout clayout;
 	
-	public MainInterface(){
+	public MainInterface() throws SQLException, InterruptedException{
 		initGUI();
 		
 	}
 	
-	private void initGUI() {
+	private void initGUI() throws SQLException, InterruptedException {
 
 		clayout = new CardLayout();
 		cardPanel = new JPanel(clayout);

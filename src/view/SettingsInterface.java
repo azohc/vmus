@@ -10,6 +10,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.JRadioButton;
 import javax.swing.JComboBox;
@@ -89,7 +90,15 @@ public class SettingsInterface extends JPanel{
 		JButton btnNewButton = new JButton("Save Settings");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			    Controller.getInstance().changeToGamePanel();
+			    try {
+					Controller.getInstance().changeToGamePanel();
+				} catch (SQLException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		btnNewButton.setBounds(500, 48, 141, 57);

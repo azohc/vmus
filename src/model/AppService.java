@@ -1,6 +1,7 @@
 package model;
 
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Properties;
 
 import javax.mail.*;
@@ -53,7 +54,11 @@ public class AppService {
 	{
 		if( _account.checkUser(username, password) )
 		{
-			
+			_account.setLoggedUsername(username);
+			_account.loadFriendsList();
+			System.out.println("HEREEEEE"+_account.getFriendsList());
+
+
 			return true;
 		}
 		return false;
@@ -81,7 +86,7 @@ public class AppService {
 					Authenticator auth = new SMTPAuthenticator();
 					Session session = Session.getInstance(props, auth);
 					MimeMessage msg = new MimeMessage(session);
-					msg.setText(pass);
+					msg.setText("Hello user, your password is: "+pass);
 					msg.setSubject("Recovery Password");
 					msg.setFrom(new InternetAddress("virtualmusgame@gmail.com"));
 					msg.addRecipient(Message.RecipientType.TO, new InternetAddress(email));
@@ -98,5 +103,19 @@ public class AppService {
 		public PasswordAuthentication getPasswordAuthentication() {
 			return new PasswordAuthentication("virtualmusgame@gmail.com", "virtualMus10");
 		}
+	}
+	
+	public Account getCurrentUser()
+	{
+		return this._account;
+	}
+	public boolean addFriend(String user1) throws SQLException 
+	{
+		TAccount _user1=new TAccount(user1,null,null);
+		return _account.addFriend(_user1);
+	}
+	public List<String> getFriends()
+	{
+		return _account.getFriendsList();
 	}
 }
