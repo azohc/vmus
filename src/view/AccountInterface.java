@@ -114,7 +114,7 @@ public class AccountInterface extends JPanel {
 		
 		
 		JButton recoveryBtn = new JButton("Password Recovery");
-		recoveryBtn.setBounds(677, 66, 200, 57);
+		recoveryBtn.setBounds(402, 150, 200, 30);
 		panel_2.add(recoveryBtn);
 		recoveryBtn.addActionListener(new ActionListener() {
             @Override
